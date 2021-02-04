@@ -1,10 +1,11 @@
 #!/usr/bin/python
 
-def a(j):
+def a(j, k):
   """
   Add two values
   """
-  return j
+  s = j + k
+  return s
 
 def m(w):
   """
@@ -23,8 +24,5 @@ def main():
   v = int(input("Enter a number: "))
   assert type(v) is int
   print(a(v))
-
-
-
 
 main()
