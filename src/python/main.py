@@ -7,6 +7,13 @@ def a(j, k):
   s = j + k
   return s
 
+def s(j, k)
+  """
+  Subtract two values
+  """
+  d = j - k
+  return d
+
 def m(w):
   """
   Multiplies a character by itself 3 times
