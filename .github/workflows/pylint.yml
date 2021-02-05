@@ -1,3 +1,23 @@
 name: Python Code Quality and Lint
-uses: ricardochaves/python-lint@v1.3.0
+on:
+  push:
+    branches: [ develop ]
+  issues:
+    types: [ opened ]
+  issue_comment:
+    types: [ created ]
+  pull_request_target:
+    types: [ opened ]
+  pull_request_review_comment:
+    types: [ created ]
+
+jobs:
+  pylint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ricardochaves/python-lint@v1.3.0
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+    
 
