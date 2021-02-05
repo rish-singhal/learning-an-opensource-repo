@@ -1,11 +1,10 @@
 #!/usr/bin/python
 
-def a(j, k):
+def a(j):
   """
   Add two values
   """
-  s = j + k
-  return s
+  return j
 
 def s(j, k)
   """
